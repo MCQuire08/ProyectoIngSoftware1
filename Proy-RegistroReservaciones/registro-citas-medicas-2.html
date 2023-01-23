@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilos/reset.css">
+    <link rel="stylesheet" href="estilos/nav-bar.css">
+    <link rel="stylesheet" href="estilos/registro-citas-medicas2.css">
+    <link rel="stylesheet" href="estilos/validacion.css">
+
+
+    <title>Registro de citas médicas</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                MOKA
+            </div>
+            <ul class="menu">
+                <li><a href="#">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="cuerpo">
+
+        <h1>Registro citas médicas</h1>
+
+        <div class="container-bloques">
+
+            <div class="primer-bloque">
+
+                <div class="medico-especifico">
+                    <p>¿Necesita un médico en específico?</p>
+                    <div class="container-switch">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <p class="text-fecha">Seleccione la fecha de la cita: </p>
+                <input type="date" id="inpDate">
+                <p>Hora:</p>
+                <input type="time" id="inpTime">
+                <p>Sede:</p>
+                <input type="text" id="inpSede">
+
+            </div>
+
+
+            <div class="segundo-bloque">
+                <input type="search" placeholder="Nombre del médico" class="search">
+
+                <div class="container-datos">
+                    <div class="info">
+
+                        <!--Datos del Medico-->
+                        <h3>Datos del Médico que atiende: </h3>
+
+                        <p>Disponibilidad</p>
+                        <div class="container">
+                            <p>Nombre: </p>
+                            <p class="respuesta">Rolando</p>
+                        </div>
+
+                        <div class="container">
+                            <p>Edad: </p>
+                            <p class="respuesta">27</p>
+                        </div>
+
+                        <div class="container">
+                            <p>Años de experiencia: </p>
+                            <p class="respuesta">5 años</p>
+                        </div>
+
+                        <div class="container">
+                            <p>Teléfono: </p>
+                            <p class="respuesta">70112347</p>
+                        </div>
+
+                        <div class="container">
+                            <P>Correo: </P>
+                            <p class="respuesta">rjquiros21@hotmail.com</p>
+                        </div>
+
+                        <div class="container">
+                            <p>% Calificación: </p>
+                            <p class="respuesta">5</p>
+                        </div>
+                    </div>
+                    <img src="img/Doctor.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="botones">
+        <input type="button" value="Anterior" onclick="location.href='registro-citas-medicas.html'">
+        <input type="button" value="Siguiente" id="btnSiguiente" onclick="">
+    </div>
+
+    <script src="javascript/validacion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
+</body>
+
+</html>

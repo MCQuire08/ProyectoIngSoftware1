@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="header-estilo.css">
+    <link rel="stylesheet" href="footer-estilo.css">
+    <link rel="stylesheet" href="registrar-pagos.css">
+    <link rel="stylesheet" href="registrar.css">
+    <link rel="stylesheet" href="../css/estilos-btn.css">
+    <link rel="stylesheet" href="../css/pagina-principal.css" type="text/css">
+    <link rel="stylesheet" href="../css/index.css" type="text/css">
+
+    <title>Registro de pagos</title>
+
+</head>
+
+<body>
+
+    <!-- Header start -->
+
+    <header class="header">
+
+        <!--Logo-->
+
+        <div class="imageHeader">
+            <a href=""><img class="logoHeader" src="LOGO_1_PNG.png" /></a>
+        </div>
+
+        <!--Navegación-->
+
+        <nav>
+            <ul class="navContent">
+
+                <li> <a href="">Sobre nosotros</a> </li>
+                <li> <a href="">Servicios médicos</a> </li>
+                <li> <a href="">Hotel</a> </li>
+                <li> <a href="">Citas</a> </li>
+                <li> <a href="">Usuario</a> </li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Header end -->
+    <section class="admin-usuarios">
+        <div class="nav-izquierdo">
+            <nav class="menuVertical">
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadorcli')" class="botonMenu">Cliente</button>
+                    <div id="miNavegadorcli" class="opcionesMenu">
+                        <a href="../Pagina_Inicial _Cliente.html">Perfil cliente</a>
+                        <a href="../Registrar-Mascota/registrarmascota.html">Registrar mascotas</a>
+                        <a href="../LISTAR-CITAS/listar-citas.html">Listar citar</a>
+                        <a href="../Proy-RegistroReservaciones/registro-citas-medicas.html">Reservar cita médica</a>
+                        <a href="../Listar-Reservaciones de Hotel/listar_reservacion_hotel.html">Lista habitación de hotel</a>
+                        <a href="../formulario_habitacion.html">Reservar habitaciones<br>de hotel</a>
+                        <a href="../Procesar_pagos/Procesar-Pagos.html">Hacer pagos</a>
+                        <a href="../LISTAR-TARJETAS/listar-tarjetas.html" class="active">Listar metodos de pagos</a>
+                        <a href="../CALIFICAR-MEDICO/calificar-medico.html">Calificación Veterinario</a>
+                    </div>
+                </div>
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadormed')" class="botonMenu">Médico</button>
+                    <div id="miNavegadormed" class="opcionesMenu">
+                        <a href="../CU-Visualizar-perfil-del-veterinario/Pagina-del-veterinario.html">Perfil médico</a>
+                        <a href="../Proy-RegistrarObservaciones/registrarObservaciones.html">Registrar observaciones médicas</a>
+                        <a href="../CU-Registrar-calificacion-mascota/registrar-calificacion-mascota.html">Registrar calificación de la mascota</a>
+                        <a href="../ejemplo ranking.html">Ranking estrellas mascotas</a>
+                    </div>
+                </div>
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadoradm')" class="botonMenu">Administrador</button>
+                    <div id="miNavegadoradm" class="opcionesMenu">
+                        <a href="">Perfil Administrador</a>
+                        <a href="../CU-Listar-usuarios/listar-usuarios.html">listar usuarios </a>
+                        <a href="../REGISTRAR-USUARIOS/registrar-usuarios.html">Registrar usuarios</a>
+                        <a href="../Proy-ListarMascotas/listar-mascotas.html">Listar mascotas</a>
+
+                    </div>
+                </div>
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadorsec')" class="botonMenu">Secretaria</button>
+                    <div id="miNavegadorsec" class="opcionesMenu">
+                        <a href="Proy-RegistroReservaciones/principal-secretaria.html">Perfil Secretaria</a>
+                        <a href="formulario_habitacion2.html">Reservar habitaciones<br>
+          de hotel</a>
+                        <a href="../Proy-RegistroReservaciones/registro-citas-medicas2.html">Citas médicas</a>
+                        <a href="../Proy-RegistroReservaciones/registro-citas-medicas2.html">Realizar pagos</a>
+                        <a href="../LISTAR-CITAS/listar-citas2.html">Listar citas</a>
+                        <a href="../Proy-RegistroReservaciones/registro-citas-medicas2.html">Listar reservaciones</a>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+        <div>
+            <div class="titulo">
+                <h1>Registar metodos de pago</h1>
+            </div>
+
+            <!-- Registrar metodos de pago start -->
+
+            <form id="formulario">
+
+                <h1>Información de facturación</h1>
+
+                <div class="imagen">
+                    <img src="tarjeta.jpg" alt="">
+                </div>
+
+                <div>
+                    <label for="txt-nombre">Nombre completo: </label>
+                    <input type="text" id="txt-nombre" class="informacion">
+                </div>
+
+                <div>
+                    <label for="txt-dirección">Dirección postal: </label>
+                    <input type="text" id="txt-dirección" class="informacion">
+                </div>
+
+                <div>
+                    <label for="txt-ciudad">Ciudad: </label>
+                    <input type="text" id="txt-ciudad" class="informacion">
+                </div>
+
+                <div>
+                    <label for="">Provincia</label>
+                    <select id="slt-provincia" class="informacion">
+                <option value="">-- Seleccione su provincia --</option>
+                <option value="San José">San José</option>
+                <option value="Alajuela">Alajuela</option>
+                <option value="Heredia">Heredia</option>
+                <option value="Cartago">Cartago</option>
+                <option value="Puntarenas">Puntarenas</option>
+                <option value="Guanacaste">Guanacaste</option>
+                <option value="Limon">Limon</option>
+            </select>
+                </div>
+
+                <h2>Información de pago</h2>
+
+                <!-- txt-ndt significa = Número de tarjeta -->
+                <div>
+                    <label for="txt-ndt">Número de tarjeta: </label>
+                    <input type="number" id="txt-ndt" class="informacion">
+                </div>
+
+                <div>
+                    <label for="">Tipo de tarjeta: </label>
+                    <select id="slt-tarjeta" class="informacionTarjeta">
+                <option value="">-- Seleccione su tipo de tarjeta --</option>
+                <option value="Visa">Visa</option>
+                <option value="MasterCard">Mastercard</option>
+                <option value="American Express">American Express</option>
+                <option value="Maestro">Maestro</option>
+            </select>
+                </div>
+
+                <!-- txt-fdv significa = Fecha de vencimiento -->
+                <div>
+                    <label for="txt-fdv">Fecha de vencimiento</label>
+                    <input type="month" id="txt-fdv" class="informacion">
+                </div>
+
+                <!-- txt-cds significa = Código de seguridad -->
+                <div>
+                    <label for="txt-cds">Código de seguridad: </label>
+                    <input type="number" id="txt-cds" class="informacion">
+                </div>
+
+                <button type="button" id="btn-guardar" class="boton1">Guardar método de pago</button>
+
+                <button type="button" id="btn-cancelar" class="boton">Cancelar</button>
+
+            </form>
+
+            <!-- Registrar metodos de pago end -->
+
+            <!-- Boton de salir start -->
+
+            <div id="Salir-menu">
+                <button type="button" class="salir">Volver al menu</button>
+            </div>
+
+            <!-- Boton de salir end -->
+
+            <!-- Footer start -->
+        </div>
+    </section>
+    <div id="stc-pie">
+
+        <div class="pie">
+            <div class="pie-imagen">
+                <img src="LOGO_1_PNG.png" alt="Logo">
+            </div>
+            <p>Clínica veterinaria Moka @2022</p>
+        </div>
+
+        <div class="redes">
+            <a href="">Facebook</a><span> / </span>
+            <a href="">Twitter</a><span> / </span>
+            <a href="">Correo</a>
+        </div>
+
+    </div>
+
+    <div id="stc-final">
+        <div>
+            <p>Diseñado por Innovatech</p>
+        </div>
+    </div>
+
+    <!-- Footer end -->
+
+    <!-- JS start -->
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="registrar-pagos.js"></script>
+
+    <!-- JS end -->
+    <script>
+        function myFunction(pIdCont) {
+            let tempContenido = document.getElementById(pIdCont);
+            if (tempContenido.className == "opcionesMenu") {
+                tempContenido.className = "opcionesMenu show";
+            } else {
+                tempContenido.className = "opcionesMenu";
+            }
+
+        }
+    </script>
+</body>
+
+</html>

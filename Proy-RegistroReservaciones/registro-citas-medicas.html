@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilos/reset.css">
+    <link rel="stylesheet" href="estilos/nav-bar.css">
+    <link rel="stylesheet" href="estilos/registro-citas-medicas.css">
+
+    <title>Registro de Citas Médicas</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                MOKA
+            </div>
+            <ul class="menu">
+                <li><a href="#">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="cuerpo">
+        <h1>Registro citas médicas</h1>
+
+        <div class="animal-registrado">
+            <p>¿El animal está registrado?</p>
+            <div class="container-switch">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="search">
+            <p>Seleccione el usuario dueño de la mascota: </p>
+            <input type="search" class="input-search">
+        </div>
+
+        <p>Datos del usuario seleccionado: </p>
+
+        <div class="datos-usuario">
+            <div class="datos">
+                <p>Nombre:</p>
+                <p id="pNombre"></p>
+            </div>
+
+            <div class="datos">
+                <p>Celular:</p>
+                <p id="pCelular"></p>
+            </div>
+
+            <div class="datos">
+                <p>N° Mascotas: </p>
+                <p id="numMascotas"></p>
+            </div>
+            <img src="" class="foto" id="imgPerfil" alt="">
+        </div>
+
+        <p id="titulo-tabla">Mascotas registradas:</p>
+
+
+
+        <table id="listado-mascotas">
+            <thead>
+                <tr>
+                    <th>Nombre de la mascota</th>
+                    <th>Animal</th>
+                    <TH>Edad</TH>
+                    <th>Género</th>
+                    <th>% Calificación</th>
+                    <th>Expediente</th>
+                    <th>Seleccione</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="botones">
+            <input type="button" value="Llenar Tabla" onclick="llenarTabla();">
+            <input type="button" value="Siguiente" onclick="location.href='registro-citas-medicas-2.html'">
+        </div>
+
+    </div>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="javascript/mascotas.js"></script>
+    <script src="javascript/listar-mascotas.js"></script>
+</body>
+
+</html>

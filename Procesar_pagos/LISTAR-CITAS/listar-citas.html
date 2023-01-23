@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/estilos-btn.css">
+    <link rel="stylesheet" href="css/tablas.css">
+    <title>citas-admin</title>
+</head>
+
+
+<body>
+    <header class="header">
+        <div class="imageHeader">
+            <img class="logoHeader" src="imgs/LOGO_1_PNG.png" /></a>
+        </div>
+        <h1>
+            Mostrar citas medicas
+        </h1>
+        <button type="button" class="btn-logout">LOGOUT</button>
+    </header>
+
+    <section class="admin-usuarios">
+        <div class="nav-izquierdo">
+            <header>
+                <h2>
+                    Citas
+                </h2>
+            </header>
+            <nav>
+                <a href="administrador.html">Volver al menú principal</a>
+            </nav>
+        </div>
+
+        <div class='menu-derecho'>
+            <!--<div class="header-derecho">
+                <h2>
+                    Porfavor hacer click generar reporte
+                </h2>
+            </div>-->
+            <form>
+                <!--<div class="formulario">
+                    <div class="label">
+                        <label for="nombre ">Nombre</label>
+                        <select id="nombre ">
+                            <option value=" ">--Seleccione el primer nombre</option>
+                            <option value="carlos ">carlos</option>
+                            <option value="maria ">Maria</option>
+                            <option value="manuel ">Manuel</option>   
+                        </select>
+                    </div>
+                    <div class="label">
+                        <label for="apellidos ">Apellidos</label>
+                        <select id="apellidos ">
+                        <option value=" ">--Seleccione los apellidos</option>
+                        <option value="arias ">Arias Marin</option>
+                        <option value="salas ">Salas Calvo</option>
+                        <option value="rojas ">Rojas Mora</option>   
+                    </select>
+                    </div>
+                </div>-->
+
+                <div class="btn-acomodo">
+                    <button type="button" class="btn-logout" id="btn-generar-reporte">Generar reporte</button>
+                    <button class="btn-logout" id="btn-borrar-reporte ">Borrar reporte</button>
+                </div>
+
+            </form>
+
+
+            <table id="tbl-perros" class="tbl-info">
+                <thead>
+                    <tr>
+                        <th><label for="txt-filtro">Filtro:</label> <input type="text" id="txt-filtro"></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th><button type="button" id="btn-agregar" class="btn-agregar">Agregar</button>
+                    </tr>
+                    <tr>
+                        <th>Nombre del cliente</th>
+                        <th>Entrada</th>
+                        <th>Salida</th>
+                        <th>Médico</th>
+                        <th>Nombre de Mascota</th>
+                        <th>Raza</th>
+                        <th>Servicios médicos</th>
+                        <th>Acciones</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <!--<tr>
+                        <td>Visa</td>
+                        <td>Mariela M Alvarado Rojas</td>
+                        <td>4404-2505-3575-5484</td>
+                        <td>787</td>
+                        <td>3/26</td>
+                        <td>SI</td>
+                    </tr>
+
+                    <tr>
+                        <td>Visa</td>
+                        <td>Mariela M Alvarado Rojas</td>
+                        <td>4404-2505-3575-5484</td>
+                        <td>787</td>
+                        <td>3/26</td>
+                        <td>SI</td>
+                    </tr>-->
+                </tbody>
+
+            </table>
+
+
+        </div>
+
+        <div>
+            <img class="foto-cliente" src="imgs/listar-citas.jpg" alt="Fotografia del cliente">
+        </div>
+
+    </section>
+    <section class="espacio-citas-admin">
+
+    </section>
+
+    <section id="stc-pie">
+
+        <div class="pie">
+            <div class="pie-imagen">
+                <img src="imgs/LOGO_1_PNG.png" alt="Logo">
+            </div>
+            <p>Clínica veterinaria Moka @2022</p>
+        </div>
+
+    </section>
+    <section id="stc-final">
+        <div>
+            <p>Diseñado por Innovatech</p>
+        </div>
+    </section>
+    <script src="js/citas-listadas.js"></script>
+    <script src="js/listar-citas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
+</body>
+
+</html>

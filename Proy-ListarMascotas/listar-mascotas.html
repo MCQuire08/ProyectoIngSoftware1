@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header-estilo.css">
+    <link rel="stylesheet" href="css/listado.css">
+    <link rel="stylesheet" href="css/footer-estilo.css">
+
+
+    <title>Listar Mascotas</title>
+
+</head>
+
+<body onload="llenarTabla();">
+
+
+    <header class="header">
+        <div class="imageHeader">
+            <a href=""><img class="logoHeader" src="img/Logo.png" /></a>
+        </div>
+        <nav>
+            <ul class="navContent">
+
+                <li> <a href="">Sobre nosotros</a> </li>
+                <li> <a href="">Servicios médicos</a> </li>
+                <li> <a href="">Hotel</a> </li>
+                <li> <a href="">Citas</a> </li>
+                <li> <a href="">Usuario</a>
+                    <ul>
+                        <li> <a href="">Salir</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="listado">
+        <H1>Listado de mascotas</H1>
+        <table id="listado-mascotas">
+            <thead>
+                <tr>
+                    <th>Nombre de la mascota</th>
+                    <th>Animal</th>
+                    <TH>Edad</TH>
+                    <th>Género</th>
+                    <th>% Calificación</th>
+                    <th>Expediente</th>
+                    <th>Seleccione</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <div id="stc-pie">
+
+        <div class="pie">
+            <div class="pie-imagen">
+                <img src="img/Logo.png" alt="Logo">
+            </div>
+            <p>Clínica veterinaria Moka @2022</p>
+        </div>
+
+        <div class="redes">
+            <a href="">Facebook</a><span> / </span>
+            <a href="">Twitter</a><span> / </span>
+            <a href="">Correo</a>
+        </div>
+
+    </div>
+
+    <div id="stc-final">
+        <div>
+            <p>Diseñado por Innovatech</p>
+        </div>
+    </div>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/listar-mascotas.js"></script>
+    <script src="js/mascotas.js"></script>
+    <script src="js/logout.js"></script>
+</body>
+
+</html>
+<

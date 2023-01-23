@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/estilos-btn.css">
+    <link rel="stylesheet" href="css/tablas.css">
+    <link rel="stylesheet" href="../css/estilos-btn.css">
+    <link rel="stylesheet" href="../css/pagina-principal.css" type="text/css">
+    <link rel="stylesheet" href="../css/index.css" type="text/css">
+    <title>citas-admin</title>
+</head>
+
+
+<body>
+    <header class="header">
+
+        <!--Logo-->
+
+        <div class="imageHeader">
+            <a href=""><img class="logoHeader" src="imgs/LOGO_1_PNG.png" /></a>
+        </div>
+
+        <!--Navegación-->
+
+        <nav>
+            <ul class="navContent">
+
+                <li> <a href="">Sobre nosotros</a> </li>
+                <li> <a href="">Servicios médicos</a> </li>
+                <li> <a href="">Hotel</a> </li>
+                <li> <a href="">Citas</a> </li>
+                <li> <a href="">Usuario</a> </li>
+
+            </ul>
+        </nav>
+
+    </header>
+    <section class="admin-usuarios">
+        <div class="nav-izquierdo">
+            <nav class="menuVertical">
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadorcli')" class="botonMenu">Cliente</button>
+                    <div id="miNavegadorcli" class="opcionesMenu">
+                        <a href="../Pagina_Inicial _Cliente.html">Perfil cliente</a>
+                        <a href="../Registrar-Mascota/registrarmascota.html">Registrar mascotas</a>
+                        <a href="../LISTAR-CITAS/listar-citas.html" class="active">Listar citar</a>
+                        <a href="../Proy-RegistroReservaciones/registro-citas-medicas.html">Reservar cita médica</a>
+                        <a href="../Listar-Reservaciones de Hotel/listar_reservacion_hotel.html">Lista habitación de hotel</a>
+                        <a href="../formulario_habitacion.html">Reservar habitaciones<br>de hotel</a>
+                        <a href="../Procesar_pagos/Procesar-Pagos.html">Hacer pagos</a>
+                        <a href="../LISTAR-TARJETAS/listar-tarjetas.html">Listar metodos de pagos</a>
+                        <a href="../CALIFICAR-MEDICO/calificar-medico.html">Calificación Veterinario</a>
+                    </div>
+                </div>
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadormed')" class="botonMenu">Médico</button>
+                    <div id="miNavegadormed" class="opcionesMenu">
+                        <a href="../CU-Visualizar-perfil-del-veterinario/Pagina-del-veterinario.html">Perfil médico</a>
+                        <a href="../Proy-RegistrarObservaciones/registrarObservaciones.html">Registrar observaciones médicas</a>
+                        <a href="../CU-Registrar-calificacion-mascota/registrar-calificacion-mascota.html">Registrar calificación de la mascota</a>
+                        <a href="../ejemplo ranking.html">Ranking estrellas mascotas</a>
+                    </div>
+                </div>
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadoradm')" class="botonMenu">Administrador</button>
+                    <div id="miNavegadoradm" class="opcionesMenu">
+                        <a href="">Perfil Administrador</a>
+                        <a href="../CU-Listar-usuarios/listar-usuarios.html">listar usuarios </a>
+                        <a href="../REGISTRAR-USUARIOS/registrar-usuarios.html">Registrar usuarios</a>
+                        <a href="../Proy-ListarMascotas/listar-mascotas.html">Listar mascotas</a>
+
+                    </div>
+                </div>
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadorsec')" class="botonMenu">Secretaria</button>
+                    <div id="miNavegadorsec" class="opcionesMenu">
+                        <a href="../Proy-RegistroReservaciones/principal-secretaria.html">Perfil Secretaria</a>
+                        <a href="../formulario_habitacion.html">Reservar habitaciones<br>
+          de hotel</a>
+                        <a href="../Proy-RegistroReservaciones/registro-citas-medicas.html">Citas médicas</a>
+                        <a href="../Procesar_pagos/Procesar-Pagos.html">Realizar pagos</a>
+                        <a href="../LISTAR-CITAS/listar-citas.html" class="active">Listar citas</a>
+                        <a href="../Proy-RegistroReservaciones/registro-citas-medicas.html">Listar reservaciones</a>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+        <div>
+            <section class="admin-usuarios">
+                <div class='menu-derecho'>
+                    <!--<div class="header-derecho">
+                <h2>
+                    Porfavor hacer click generar reporte
+                </h2>
+            </div>-->
+                    <form>
+                        <!--<div class="formulario">
+                    <div class="label">
+                        <label for="nombre ">Nombre</label>
+                        <select id="nombre ">
+                            <option value=" ">--Seleccione el primer nombre</option>
+                            <option value="carlos ">carlos</option>
+                            <option value="maria ">Maria</option>
+                            <option value="manuel ">Manuel</option>   
+                        </select>
+                    </div>
+                    <div class="label">
+                        <label for="apellidos ">Apellidos</label>
+                        <select id="apellidos ">
+                        <option value=" ">--Seleccione los apellidos</option>
+                        <option value="arias ">Arias Marin</option>
+                        <option value="salas ">Salas Calvo</option>
+                        <option value="rojas ">Rojas Mora</option>   
+                    </select>
+                    </div>
+                </div>-->
+
+
+                    </form>
+                    <div id="lista">
+                        <h1 class="titulo">Listar de métodos de pago</h1>
+                    </div>
+
+                    <table id="tbl-perros" class="tbl-info">
+                        <thead>
+                            <tr>
+                                <th><label for="txt-filtro">Filtro:</label> <input type="text" id="txt-filtro"></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th><button type="button" id="btn-agregar" class="btn-agregar">Agregar</button>
+                            </tr>
+                            <tr>
+                                <th>Nombre del cliente</th>
+                                <th>Entrada</th>
+                                <th>Salida</th>
+                                <th>Médico</th>
+                                <th>Nombre de Mascota</th>
+                                <th>Raza</th>
+                                <th>Servicios médicos</th>
+                                <th>Acciones</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <!--<tr>
+                        <td>Visa</td>
+                        <td>Mariela M Alvarado Rojas</td>
+                        <td>4404-2505-3575-5484</td>
+                        <td>787</td>
+                        <td>3/26</td>
+                        <td>SI</td>
+                    </tr>
+
+                    <tr>
+                        <td>Visa</td>
+                        <td>Mariela M Alvarado Rojas</td>
+                        <td>4404-2505-3575-5484</td>
+                        <td>787</td>
+                        <td>3/26</td>
+                        <td>SI</td>
+                    </tr>-->
+                        </tbody>
+
+                    </table>
+
+
+                </div>
+
+
+
+            </section>
+            <section class="espacio-citas-admin">
+
+            </section>
+        </div>
+    </section>
+    <section id="stc-pie">
+
+        <div class="pie">
+            <div class="pie-imagen">
+                <img src="imgs/LOGO_1_PNG.png" alt="Logo">
+            </div>
+            <p>Clínica veterinaria Moka @2022</p>
+        </div>
+
+    </section>
+    <section id="stc-final">
+        <div>
+            <p>Diseñado por Innovatech</p>
+        </div>
+    </section>
+    <script src="js/citas-listadas.js"></script>
+    <script src="js/listar-citas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
+    <script>
+        function myFunction(pIdCont) {
+            let tempContenido = document.getElementById(pIdCont);
+            if (tempContenido.className == "opcionesMenu") {
+                tempContenido.className = "opcionesMenu show";
+            } else {
+                tempContenido.className = "opcionesMenu";
+            }
+
+        }
+    </script>
+</body>
+
+</html>

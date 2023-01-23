@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilos/reset.css">
+    <link rel="stylesheet" href="estilos/registro-citas-medicas2.css">
+    <link rel="stylesheet" href="estilos/validacion.css">
+    <link rel="stylesheet" href="../css/estilos-btn.css">
+    <link rel="stylesheet" href="../css/pagina-principal.css" type="text/css">
+    <link rel="stylesheet" href="../css/index.css" type="text/css">
+    <link rel="stylesheet" href="../css/estilos_header.css">
+    <link rel="stylesheet" href="../css/footer-estilo3.css" type="text/css">
+
+
+    <title>Registro de citas médicas</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="imageHeader"> <img class="logoHeader" src="../imgs/imgs/LOGO_1_PNG.png" /></a>
+        </div>
+
+        <h1> Secretaria </h1>
+
+        <button type="button" class="btn-logout">Cerrar sesión</button>
+
+    </header>
+    <section class="admin-usuarios">
+        <div class="nav-izquierdo">
+            <nav class="menuVertical">
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadorcli')" class="botonMenu">Cliente</button>
+                    <div id="miNavegadorcli" class="opcionesMenu">
+                        <a href="../Pagina_Inicial _Cliente.html">Perfil cliente</a>
+                        <a href="../Registrar-Mascota/registrarmascota.html">Registrar mascotas</a>
+                        <a href="../LISTAR-CITAS/listar-citas.html">Listar citar</a>
+                        <a href="../Proy-RegistroReservaciones/registro-citas-medicas.html" class="active">Reservar cita médica</a>
+                        <a href="../Listar-Reservaciones de Hotel/listar_reservacion_hotel.html">Lista habitación de hotel</a>
+                        <a href="../formulario_habitacion.html">Reservar habitaciones<br>de hotel</a>
+                        <a href="../Procesar_pagos/Procesar-Pagos.html">Hacer pagos</a>
+                        <a href="../LISTAR-TARJETAS/listar-tarjetas.html">Listar metodos de pagos</a>
+                        <a href="../CALIFICAR-MEDICO/calificar-medico.html">Calificación Veterinario</a>
+                    </div>
+                </div>
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadormed')" class="botonMenu">Médico</button>
+                    <div id="miNavegadormed" class="opcionesMenu">
+                        <a href="../CU-Visualizar-perfil-del-veterinario/Pagina-del-veterinario.html">Perfil médico</a>
+                        <a href="../Proy-RegistrarObservaciones/registrarObservaciones.html">Registrar observaciones médicas</a>
+                        <a href="../CU-Registrar-calificacion-mascota/registrar-calificacion-mascota.html">Registrar calificación de la mascota</a>
+                        <a href="../ejemplo ranking.html">Ranking estrellas mascotas</a>
+                    </div>
+                </div>
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadoradm')" class="botonMenu">Administrador</button>
+                    <div id="miNavegadoradm" class="opcionesMenu">
+                        <a href="">Perfil Administrador</a>
+                        <a href="../CU-Listar-usuarios/listar-usuarios.html">listar usuarios </a>
+                        <a href="../REGISTRAR-USUARIOS/registrar-usuarios.html">Registrar usuarios</a>
+                        <a href="../Proy-ListarMascotas/listar-mascotas.html">Listar mascotas</a>
+
+                    </div>
+                </div>
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadorsec')" class="botonMenu">Secretaria</button>
+                    <div id="miNavegadorsec" class="opcionesMenu">
+                        <a href="../Proy-RegistroReservaciones/principal-secretaria.html">Perfil Secretaria</a>
+                        <a href="../formulario_habitacion22.html">Reservar habitaciones<br>
+          de hotel</a>
+                        <a href="../Proy-RegistroReservaciones/registro-citas-medicas22.html">Citas médicas</a>
+                        <a href="../Procesar_pagos/Procesar-Pagos22.html">Realizar pagos</a>
+                        <a href="../LISTAR-CITAS/listar-citas22.html">Listar citas</a>
+                        <a href="../Proy-RegistroReservaciones/registro-citas-medicas22.html">Listar reservaciones</a>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+        <div>
+            <div class="cuerpo">
+
+                <h1>Registro citas médicas</h1>
+
+                <div class="container-bloques">
+
+                    <div class="primer-bloque">
+
+                        <div class="medico-especifico">
+                            <p>¿Necesita un médico en específico?</p>
+                            <div class="container-switch">
+                                <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                            </div>
+                        </div>
+
+                        <p class="text-fecha">Seleccione la fecha de la cita: </p>
+                        <input type="date" id="inpDate">
+                        <p>Hora:</p>
+                        <input type="time" id="inpTime">
+                        <p>Sede:</p>
+                        <input type="text" id="inpSede">
+
+                    </div>
+
+
+                    <div class="segundo-bloque">
+                        <input type="search" placeholder="Nombre del médico" class="search">
+
+                        <div class="container-datos">
+                            <div class="info">
+
+                                <!--Datos del Medico-->
+                                <h3>Datos del Médico que atiende: </h3>
+
+                                <p>Disponibilidad</p>
+                                <div class="container">
+                                    <p>Nombre: </p>
+                                    <p class="respuesta">Rolando</p>
+                                </div>
+
+                                <div class="container">
+                                    <p>Edad: </p>
+                                    <p class="respuesta">27</p>
+                                </div>
+
+                                <div class="container">
+                                    <p>Años de experiencia: </p>
+                                    <p class="respuesta">5 años</p>
+                                </div>
+
+                                <div class="container">
+                                    <p>Teléfono: </p>
+                                    <p class="respuesta">70112347</p>
+                                </div>
+
+                                <div class="container">
+                                    <P>Correo: </P>
+                                    <p class="respuesta">rjquiros21@hotmail.com</p>
+                                </div>
+
+                                <div class="container">
+                                    <p>% Calificación: </p>
+                                    <p class="respuesta">5</p>
+                                </div>
+                            </div>
+                            <img src="img/Doctor.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="botones">
+                <input type="button" value="Anterior" onclick="location.href='registro-citas-medicas.html'">
+                <input type="button" value="Siguiente" id="btnSiguiente" onclick="">
+            </div>
+        </div>
+    </section>
+    <script src="javascript/validacion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
+    <script>
+        function myFunction(pIdCont) {
+            let tempContenido = document.getElementById(pIdCont);
+            if (tempContenido.className == "opcionesMenu") {
+                tempContenido.className = "opcionesMenu show";
+            } else {
+                tempContenido.className = "opcionesMenu";
+            }
+
+        }
+    </script>
+</body>
+
+</html>

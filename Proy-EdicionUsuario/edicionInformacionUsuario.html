@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilos/reset.css">
+    <link rel="stylesheet" href="estilos/nav-bar.css">
+    <link rel="stylesheet" href="estilos/edicion-info.css">
+
+    <title>Perfil de Usuario</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                MOKA
+            </div>
+            <ul class="menu">
+                <li><a href="#">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container-pagina">
+        <h1 id="titulo">Perfil de Usuario</h1>
+
+        <div class="container">
+
+            <div class="container1">
+
+                <div class="informacion1">
+                    <input type="text" placeholder="Nombre del Usuario" name="" id="nombreUsu">
+                    <input type="text" placeholder="Apellidos" name="" id="apellidosUsu">
+                </div>
+
+                <input type="email" placeholder="Correo Electronico" name="" id="correoUsu">
+
+                <div class="informacion2">
+                    <input type="tel" placeholder="Telefono" name="" id="numeroUsu">
+                    <input type="text" placeholder="Cedula" name="" id="cedulaUsu">
+
+                    <select name="Genero" id="generoUsu">
+                        <option value="0">Genero</option>
+                        <option value="1">Masculino</option>
+                        <option value="2">Femenino</option>
+                        <option value="3">Otro</option>
+                    </select>
+
+                </div>
+
+                <div class="metodos-pago">
+                    <h1>Métodos de pago</h1>
+                    <div class="tarjetas-registradas">
+                        <p>Tarjeta 1 - 125646433544546</p>
+                        <p>Tarjeta 2 - 125646433544546</p>
+                        <p>Tarjeta 3 - 125646433544546</p>
+                    </div>
+
+                    <div class="container-btn">
+                        <input type="button" value="Borrar Tarjeta" id="btn-borrar">
+                        <input type="button" value="Agregar Tarjeta" id="btn-agregar">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container2">
+                <textarea name="" placeholder="Dirección" id="direccionUsu" cols="40" rows="8"></textarea>
+
+                <div class="container-mascotas">
+                    <h1>Mascotas</h1>
+                    <div class="mascotas-registradas">
+                        <p>Mascota 1</p>
+                        <p>Mascota 2</p>
+                        <p>Mascota 3</p>
+                    </div>
+
+                    <div class="container-btn2">
+                        <input type="button" value="Editar">
+                        <input type="button" value="Registrar Mascota">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container3">
+                <div class="container-foto">
+                    <img src="img/Rolando Quirós Artavia.jpg" alt="Error">
+                </div>
+                <div class="container-btn3">
+                    <input type="button" value="Eliminar foto">
+                    <input type="button" value="Cambiar foto" id="btn-cambioFoto">
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="container-btn-principales">
+            <input type="button" value="Atras">
+            <input type="button" value="Guardar">
+            <input type="button" value="Generar Datos" onclick="listar();">
+        </div>
+    </div>
+    <script src="js/listar-perfil-usuario.js"></script>
+    <script src="js/usuarios.js"></script>
+</body>
+
+</html>

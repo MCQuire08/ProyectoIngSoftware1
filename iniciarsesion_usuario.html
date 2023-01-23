@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>	
+<link rel="stylesheet" href="css/reset.css" type="text/css">
+<link rel="stylesheet" href="css/index.css" type="text/css">
+<link rel="stylesheet" href="css/estilos_header.css" type="text/css">
+<link rel="stylesheet" href="css/footer-estilo.css" type="text/css">
+<link rel="stylesheet" href="css/estilos_iniciar_sesion.css" type="text/css">
+</head>
+<body>
+<header class="header"> 
+  <!--Logo-->
+  <div class="imageHeader"> <a href="Land page header.html"><img class="logoHeader" src="imgs/LOGO_1_PNG.png" alt="" /></a> </div>
+  <!--Navegación-->
+  <nav>
+    <ul class="navContent">
+      <li> <a href="">Sobre nosotros</a> </li>
+      <li> <a href="">Servicios médicos</a> </li>
+      <li> <a href="">Hotel</a> </li>
+      <li> <a href="">Citas</a> </li>
+    </ul>
+  </nav>
+</header>
+<form class="formularioReserva"  name="miFormulario"  onsubmit="return validateForm(this)" method="post" id="miFormulario">
+  <fieldset>
+    <legend class="clienteForm">Inicio sesión Usuario</legend>
+    <div> 
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdyJ8_8vqKLaa12697aM9-sS21zGeDKOjBiyorcg9JoCNc290iz8jKnH0e7I0A_zVWER8&usqp=CAU" alt="Avatar" class="avatar"> 
+	</div>
+    <div class="datosFormulario">
+	<div id="msg"></div>	
+      <label for="pUsuario"><b>Nombre de usuario</b></label>
+      <input class="Sesion_formulario"  type="text" placeholder="Ingrese nombre de usuario" name="pUsuario" id="pUsuario" />
+      <label for="pContraseña"><b>Conraseña</b></label>
+      <input class="Sesion_formulario" type="password" placeholder="Ingrese contraseña" name="pContraseña" id="pContraseña" />
+      <button class="sesionForm" type="iniciarSesion"><a href="Pagina_Inicial _Cliente.html">Iniciar sesión</a></button>
+      <label>
+        <input type="checkbox" checked="checked" name="Recordar">
+        Recordar datos </label>
+    </div>
+    <div class="datosFormulario">
+      <input type="reset" class="cancelar" value="Cancelar"/>
+      <a class="registroform" href="#">Registrarse</a> </div>
+  </fieldset>
+</form>
+<section id="stc-pie">
+  <div class="pie">
+    <div class="pie-imagen"> <img src="imgs/LOGO_1_PNG.png" alt="Logo"> </div>
+    <p>Clínica veterinaria Moka @2022</p>
+  </div>
+  <div class="redes"> <a href="">Facebook</a><span> / </span> <a href="">Twitter</a><span> / </span> <a href="">Correo</a> </div>
+</section>
+<section id="stc-final">
+  <div>
+    <p>Diseñado por Innovatech</p>
+  </div>
+</section>
+<script src="js/iniciar_sesion.js"></script>
+</body>
+</html>

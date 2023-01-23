@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/registrarmascota.css">
+    <link rel="stylesheet" href="../css/estilos-btn.css">
+    <link rel="stylesheet" href="../css/pagina-principal.css" type="text/css">
+    <link rel="stylesheet" href="../css/index.css" type="text/css">
+    <link rel="stylesheet" href="../css/estilos_header.css">
+    <link rel="stylesheet" href="../css/footer-estilo2.css">
+    <link rel="stylesheet" href="css/formReserva.css">
+    <link rel="stylesheet" href="css/inputsReset.css">
+    <title>Registrar Mascotas</title>
+</head>
+
+<body>
+    <!--Inicio: Header -->
+    <header class="header">
+
+        <div class="imageHeader"> <img class="logoHeader" src="imgs/LOGO_1_PNG.png" /></a>
+        </div>
+
+        <h1> Cliente </h1>
+
+        <button type="button" class="btn-logout">Cerrar sesión</button>
+
+    </header>
+    <!--Fin: Header -->
+    <section class="admin-usuarios">
+        <div class="nav-izquierdo">
+            <nav class="menuVertical">
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadorcli')" class="botonMenu">Cliente</button>
+                    <div id="miNavegadorcli" class="opcionesMenu">
+                        <a href="../Pagina_Inicial _Cliente.html">Perfil cliente</a>
+                        <a href="../Registrar-Mascota/registrarmascota.html" class="active">Registrar mascotas</a>
+                        <a href="../LISTAR-CITAS/listar-citas.html">Listar citar</a>
+                        <a href="../Proy-RegistroReservaciones/registro-citas-medicas.html">Reservar cita médica</a>
+                        <a href="../Listar-Reservaciones de Hotel/listar_reservacion_hotel.html">Lista habitación de hotel</a>
+                        <a href="../formulario_habitacion.html">Reservar habitaciones<br>de hotel</a>
+                        <a href="../Procesar_pagos/Procesar-Pagos.html">Hacer pagos</a>
+                        <a href="../LISTAR-TARJETAS/listar-tarjetas.html">Listar metodos de pagos</a>
+                        <a href="../CALIFICAR-MEDICO/calificar-medico.html">Calificación Veterinario</a>
+                    </div>
+                </div>
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadormed')" class="botonMenu">Médico</button>
+                    <div id="miNavegadormed" class="opcionesMenu">
+                        <a href="../CU-Visualizar-perfil-del-veterinario/Pagina-del-veterinario.html">Perfil médico</a>
+                        <a href="../Proy-RegistrarObservaciones/registrarObservaciones.html">Registrar observaciones médicas</a>
+                        <a href="../CU-Registrar-calificacion-mascota/registrar-calificacion-mascota.html">Registrar calificación de la mascota</a>
+                        <a href="../ejemplo ranking.html">Ranking estrellas mascotas</a>
+                    </div>
+                </div>
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadoradm')" class="botonMenu">Administrador</button>
+                    <div id="miNavegadoradm" class="opcionesMenu">
+                        <a href="">Perfil Administrador</a>
+                        <a href="../CU-Listar-usuarios/listar-usuarios.html">listar usuarios </a>
+                        <a href="../REGISTRAR-USUARIOS/registrar-usuarios.html">Registrar usuarios</a>
+                        <a href="../Proy-ListarMascotas/listar-mascotas.html">Listar mascotas</a>
+
+                    </div>
+                </div>
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadorsec')" class="botonMenu">Secretaria</button>
+                    <div id="miNavegadorsec" class="opcionesMenu">
+                        <a href="../Proy-RegistroReservaciones/principal-secretaria.html">Perfil Secretaria</a>
+                        <a href="../formulario_habitacion2.html">Reservar habitaciones<br>
+          de hotel</a>
+                        <a href="../Proy-RegistroReservaciones/registro-citas-medicas2.html">Citas médicas</a>
+                        <a href="../Procesar_pagos/Procesar-Pagos2.html">Realizar pagos</a>
+                        <a href="../LISTAR-CITAS/listar-citas2.html">Listar citas</a>
+                        <a href="../Proy-RegistroReservaciones/registro-citas-medicas2.html">Listar reservaciones</a>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+        <div class="contenidoHabitacion">
+            <form class="formularioReserva" name="miFormulario" onsubmit="return validateForm(this)" method="post" id="miFormulario">
+                <fieldset>
+
+                    <legend>Registrar Una Mascota</legend>
+                    <span id="msg"></span>
+                    <div class="flexContent">
+                        <label for="pHabitacion">Tipo de Mascota:</label>
+                        <select id="pHabitacion" name="pHabitacion" class="casillas_formulario">
+    <option value="0" disabled selected>---- SELECCIONE UNA OPCIÓN ----</option>
+    <option value="1">Perro</option>
+    <option value="2">Gato</option>
+    <option value="3">Otro</option>
+  </select>
+                    </div>
+                    <div class="flexContent">
+                        <label for="pRaza">Tipo de raza*</label>
+                        <input class="casillas_formulario" type="text" name="pRaza" id="pRaza" />
+                    </div>
+                    <div class="flexContent">
+                        <label for="fechaEn">Fecha de Nacimiento:</label>
+                        <input class="casillas_formulario" type="date" id="fechaEn" name="fechaEn">
+                    </div>
+                    <div class="flexContent">
+                        <label for="fechaSa">Foto de la Mascota:</label>
+                        <input class="casillas_formulario" type="file" id="fechaSa" name="fechaSa">
+                    </div>
+                    <div>
+                        <label class="comentarioFormulario" for="pComentario">Cuidados especiales de la mascota*</label>
+                        <br />
+                        <textarea name="pComentario" id="pComentario" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <input class="botonEnviar" type="submit" id="submit" value="Enviar">
+                    <a class="botonRegresar" href="Pagina_Inicial _Cliente.html">Regresar</a>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <!-- Inicio: Footer -->
+    <div id="stc-pie">
+        <div class="pie">
+            <div class="pie-imagen"> <img src="imgs/LOGO_1_PNG.png" alt="Logo"> </div>
+            <p>Clínica veterinaria Moka @2022</p>
+        </div>
+    </div>
+    <div id="stc-final">
+        <div>
+            <p>Diseñado por Innovatech</p>
+        </div>
+    </div>
+    <!-- Fin: Footer -->
+
+</body>
+<script type="text/javascript" src="js/formResetmascota.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/sweetAlert.js"></script>
+<script>
+    function myFunction(pIdCont) {
+        let tempContenido = document.getElementById(pIdCont);
+        if (tempContenido.className == "opcionesMenu") {
+            tempContenido.className = "opcionesMenu show";
+        } else {
+            tempContenido.className = "opcionesMenu";
+        }
+
+    }
+</script>
+
+</html>

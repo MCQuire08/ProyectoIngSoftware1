@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0074)file:///C:/Users/sofia/OneDrive/Escritorio/CENFOTEC/ejemplo%20ranking.html -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Documento sin título</title>
+    <link rel="stylesheet" href="css/Reset.css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/estilos_slider.css" type="text/css">
+    <link rel="stylesheet" href="css/estilos_header.css" type="text/css">
+    <link rel="stylesheet" href="css/estilos_lista_medicos.css" type="text/css">
+    <link rel="stylesheet" href="../css/footer-estilo.css" type="text/css">
+    <link rel="stylesheet" href="css/estilos_Ranking.css" type="text/css">
+    <link rel="stylesheet" href="css/pagina-principal.css" type="text/css">
+    <link rel="stylesheet" href="css/estilos-btn.css">
+    <link rel="stylesheet" href="css/header.css">
+    <title>Calificación de las mascotas</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="imageHeader"> <img class="logoHeader" src="imgs/LOGO_1_PNG.png" /></a>
+        </div>
+
+        <h1> Veterinario </h1>
+
+        <button type="button" class="btn-logout">Cerrar sesión</button>
+
+    </header>
+    <section class="admin-usuarios">
+        <div class="nav-izquierdo">
+            <nav class="menuVertical">
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadorcli')" class="botonMenu">Cliente</button>
+                    <div id="miNavegadorcli" class="opcionesMenu">
+                        <a href="Pagina_Inicial _Cliente.html">Perfil cliente</a>
+                        <a href="Registrar-Mascota/registrarmascota.html">Registrar mascotas</a>
+                        <a href="LISTAR-CITAS/listar-citas.html">Listar citar</a>
+                        <a href="Proy-RegistroReservaciones/registro-citas-medicas.html">Reservar cita médica</a>
+                        <a href="Listar-Reservaciones de Hotel/listar_reservacion_hotel.html">Lista habitación de hotel</a>
+                        <a href="formulario_habitacion.html">Reservar habitaciones<br>de hotel</a>
+                        <a href="Procesar_pagos/Procesar-Pagos.html">Hacer pagos</a>
+                        <a href="LISTAR-TARJETAS/listar-tarjetas.html">Listar metodos de pagos</a>
+                        <a href="CALIFICAR-MEDICO/calificar-medico.html">Calificación Veterinario</a>
+                    </div>
+                </div>
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadormed')" class="botonMenu">Médico</button>
+                    <div id="miNavegadormed" class="opcionesMenu">
+                        <a href="CU-Visualizar-perfil-del-veterinario/Pagina-del-veterinario.html">Perfil médico</a>
+                        <a href="Proy-RegistrarObservaciones/registrarObservaciones.html">Registrar observaciones médicas</a>
+                        <a href="CU-Registrar-calificacion-mascota/registrar-calificacion-mascota.html">Registrar calificación de la mascota</a>
+                        <a href="ejemplo ranking.html" class="active">Ranking estrellas mascotas</a>
+                    </div>
+                </div>
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadoradm')" class="botonMenu">Administrador</button>
+                    <div id="miNavegadoradm" class="opcionesMenu">
+                        <a href="">Perfil Administrador</a>
+                        <a href="CU-Listar-usuarios/listar-usuarios.html">listar usuarios </a>
+                        <a href="REGISTRAR-USUARIOS/registrar-usuarios.html">Registrar usuarios</a>
+                        <a href="Proy-ListarMascotas/listar-mascotas.html">Listar mascotas</a>
+
+                    </div>
+                </div>
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadorsec')" class="botonMenu">Secretaria</button>
+                    <div id="miNavegadorsec" class="opcionesMenu">
+                        <a href="Proy-RegistroReservaciones/principal-secretaria.html">Perfil Secretaria</a>
+                        <a href="formulario_habitacion2.html" class="active">Reservar habitaciones<br>
+          de hotel</a>
+                        <a href="Proy-RegistroReservaciones/registro-citas-medicas2.html">Citas médicas</a>
+                        <a href="Procesar_pagos/Procesar-Pagos2.html">Realizar pagos</a>
+                        <a href="LISTAR-CITAS/listar-citas2.html">Listar citas</a>
+                        <a href="Proy-RegistroReservaciones/registro-citas-medicas2.html">Listar reservaciones</a>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+        </div>
+        <div class="formularioHabitacion">
+            <div class="infoRanking">
+                <form class="tipoRanking" name="miFormulario" onsubmit="return validateForm(this)" method="post" id="miFormulario">
+
+
+                    <h2>Alto ranking Tres estrellas</h2>
+                    <section class="infoRanking">
+                        <fieldset class="contenidoRanking">
+                            <h2>Luna</h2>
+                            <div> <img class="imagenMascota" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9s9IpYQU2z9OA-pG5FLIZCdnOlL4p-xPXhcAsC_RA2srZoGXC4sZPY66mROu4QEuYv3U&usqp=CAU" alt="Avatar" class="avatar"> </div>
+                            <h2>Calificación</h2>
+                            <p class="clasificacion">
+                                <input class="primeraEstrella" type="radio" name="estrellas" value="5">
+                                <!--
+    -->
+                                <label for="primeraEstrella">★</label>
+                                <!--
+    -->
+                                <input class="primeraEstrella" type="radio" name="estrellas" value="5">
+                                <!--
+    -->
+                                <label for="primeraEstrella">★</label>
+                                <!--
+    -->
+                                <input class="primeraEstrella" type="radio" name="estrellas" value="5">
+                                <!--
+    -->
+                                <label for="primeraEstrella">★</label>
+
+
+                            </p>
+                        </fieldset>
+                        <fieldset class="contenidoRanking">
+                            <h2>Ramon</h2>
+                            <div> <img class="imagenMascota" src="./ejemplo ranking_files/images(1)" alt="Avatar" class="avatar"> </div>
+                            <h2>Calificación</h2>
+                            <p class="clasificacion">
+                                <input class="primeraEstrella" type="radio" name="estrellas" value="5">
+                                <!--
+    -->
+                                <label for="radio">★</label>
+                                <!--
+    -->
+                                <input class="primeraEstrella" type="radio" name="estrellas" value="5">
+                                <!--
+    -->
+                                <label for="radio">★</label>
+                                <!--
+    -->
+                                <input class="primeraEstrella" type="radio" name="estrellas" value="5">
+                                <!--
+    -->
+                                <label for="radio">★</label>
+
+
+                            </p>
+                        </fieldset>
+                        <fieldset class="contenidoRanking">
+                            <h2>Paco</h2>
+                            <div> <img class="imagenMascota" src="./ejemplo ranking_files/images(2)" alt="Avatar" class="avatar"> </div>
+                            <h2>Calificación</h2>
+                            <p class="clasificacion">
+                                <input class="primeraEstrella" type="radio" name="estrellas" value="5">
+                                <!--
+    -->
+                                <label for="radio">★</label>
+                                <!--
+    -->
+                                <input class="primeraEstrella" type="radio" name="estrellas" value="5">
+                                <!--
+    -->
+                                <label for="radio">★</label>
+                                <!--
+    -->
+                                <input class="primeraEstrella" type="radio" name="estrellas" value="5">
+                                <!--
+    -->
+                                <label for="radio">★</label>
+
+
+                            </p>
+                        </fieldset>
+                    </section>
+                    <h2>Medio ranking Dos estrellas</h2>
+                    <section class="infoRanking">
+                        <fieldset class="contenidoRanking">
+                            <h2>Dulce</h2>
+                            <div> <img class="imagenMascota" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp-IQgGzSHs_MGuJBE-vOolhXs5CgSDP1Kym--lxt6P-AIrbLOp0bfStelfgnb4KEpfw8&usqp=CAU" class="avatar"> </div>
+                            <h2>Calificación</h2>
+                            <p class="clasificacion">
+                                <input class="primeraEstrella" type="radio" name="estrellas" value="5">
+                                <!--
+    -->
+                                <label for="radio">★</label>
+                                <!--
+    -->
+                                <input class="primeraEstrella" type="radio" name="estrellas" value="5">
+                                <!--
+    -->
+                                <label for="radio">★</label>
+
+
+
+                            </p>
+                        </fieldset>
+                        <fieldset class="contenidoRanking">
+                            <h2>Confite</h2>
+                            <div> <img class="imagenMascota" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-l5igRXro3Kmrsy8OdrNu-N0nR961xo1ywwBRjiTT7HQ3TodNCrK3qdkocI6qQNUU_Yw&usqp=CAU" alt="Avatar" class="avatar"> </div>
+                            <h2>Calificación</h2>
+                            <p class="clasificacion">
+                                <input class="primeraEstrella" type="radio" name="estrellas" value="5">
+                                <!--
+    -->
+                                <label for="radio">★</label>
+                                <!--
+    -->
+                                <input class="primeraEstrella" type="radio" name="estrellas" value="5">
+                                <!--
+    -->
+                                <label for="radio">★</label>
+
+
+                            </p>
+                        </fieldset>
+                        <fieldset class="contenidoRanking">
+                            <h2>Chico</h2>
+                            <div> <img class="imagenMascota" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_jdjCUkPqnEZoU-t4VTo5bcRXEhlcJepuiJ1BLC6BXsbkh7rekec0T8eAkGVtqQY5Auc&usqp=CAU" alt="Avatar" class="avatar"> </div>
+                            <h2>Calificación</h2>
+                            <p class="clasificacion">
+                                <input class="primeraEstrella" type="radio" name="estrellas" value="5">
+                                <!--
+    -->
+                                <label for="radio">★</label>
+                                <!--
+    -->
+                                <input class="primeraEstrella" type="radio" name="estrellas" value="5">
+                                <!--
+    -->
+                                <label for="radio">★</label>
+
+
+                            </p>
+                        </fieldset>
+                    </section>
+                    <h2>Bajo ranking Una estrellas</h2>
+                    <section class="infoRanking">
+                        <fieldset class="contenidoRanking">
+                            <h2>cloe</h2>
+                            <div> <img class="imagenMascota" src="https://besthqwallpapers.com/Uploads/24-3-2018/45614/thumb-great-green-macaw-buffons-macaw-green-parrot-beautiful-green-bird-costa-rica.jpg" class="avatar"> </div>
+                            <h2>Calificación</h2>
+                            <p class="clasificacion">
+                                <input class="primeraEstrella" type="radio" name="estrellas" value="5">
+                                <!--
+    -->
+                                <label for="radio">★</label>
+
+                            </p>
+                        </fieldset>
+                        <fieldset class="contenidoRanking">
+                            <h2>firulais</h2>
+                            <div> <img class="imagenMascota" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTadtOj4Dc3nWxB3vLJUArnOqAZOH8HqX2GjA&usqp=CAU" alt="Avatar" class="avatar"> </div>
+                            <h2>Calificación</h2>
+                            <p class="clasificacion">
+                                <input class="primeraEstrella" type="radio" name="estrellas" value="5">
+                                <!--
+    -->
+                                <label for="radio">★</label>
+
+
+                            </p>
+                        </fieldset>
+                        <fieldset class="contenidoRanking">
+                            <h2>M.S Piggy</h2>
+                            <div> <img class="imagenMascota" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQtEzQcmquWV1hKpwUEODTDtEsZC_bfXY0PQ&usqp=CAU" alt="Avatar" class="avatar"> </div>
+                            <h2>Calificación</h2>
+                            <p class="clasificacion">
+
+                                <input class="primeraEstrella" type="radio" name="estrellas" value="5">
+                                <!--
+    -->
+                                <label for="radio">★</label>
+
+
+                            </p>
+                        </fieldset>
+                    </section>
+                </form>
+    </section>
+    </section>
+    <div id="stc-pie">
+        <div class="pie">
+            <div class="pie-imagen"> <img src="imgs/LOGO_1_PNG.png" alt="Logo"> </div>
+            <p>Clínica veterinaria Moka @2022</p>
+        </div>
+    </div>
+    <div id="stc-final">
+        <div>
+            <p>Diseñado por Innovatech</p>
+        </div>
+    </div>
+    <script>
+        function myFunction(pIdCont) {
+            let tempContenido = document.getElementById(pIdCont);
+            if (tempContenido.className == "opcionesMenu") {
+                tempContenido.className = "opcionesMenu show";
+            } else {
+                tempContenido.className = "opcionesMenu";
+            }
+
+        }
+    </script>
+</body>
+
+</html>

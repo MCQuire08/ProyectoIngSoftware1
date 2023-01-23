@@ -1,0 +1,174 @@
+.container-pagina {
+    width: 80%;
+    margin: auto;
+    padding-top: 15px;
+}
+
+#titulo {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+}
+
+
+/*------------------PRIMER CONTENEDOR---------------------*/
+
+.container1 {
+    width: 40%;
+    height: 400px;
+}
+
+.informacion1 {
+    display: flex;
+}
+
+#nombreUsu {
+    width: 35%;
+    height: 18px;
+}
+
+#apellidosUsu {
+    width: 55%;
+    height: 18px;
+    margin: 0 5%;
+}
+
+#correoUsu {
+    margin-top: 10px;
+    width: 70%;
+    height: 18px;
+}
+
+.informacion2 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#numeroUsu,
+#cedulaUsu {
+    width: 30%;
+    height: 18px;
+}
+
+#generoUsu {
+    width: 20%;
+    height: 23px;
+}
+
+.metodos-pago {
+    margin-top: 30px;
+}
+
+.metodos-pago h1 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.tarjetas-registradas {
+    border: 1px solid black;
+    width: 60%;
+    margin: auto;
+    height: 70px;
+}
+
+.tarjetas-registradas p {
+    margin-top: 7px;
+    margin-left: 20px;
+}
+
+.container-btn {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-btn input {
+    width: 100px;
+    height: 30px;
+}
+
+
+/*------------------SEGUNDO CONTENEDOR---------------------*/
+
+.container-mascotas {
+    margin-top: 30px;
+}
+
+.container-mascotas h1 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.mascotas-registradas {
+    border: 1px solid black;
+    width: 80%;
+    margin: auto;
+    height: 70px;
+}
+
+.mascotas-registradas p {
+    margin-top: 7px;
+    margin-left: 20px;
+}
+
+.container-btn2 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-btn2 input {
+    width: 100px;
+    height: 30px;
+}
+
+
+/*------------------TERCER CONTENEDOR---------------------*/
+
+.container-foto {
+    max-width: 100%;
+    max-height: 210px;
+}
+
+.container-foto img {
+    width: 100%;
+    height: 210px;
+}
+
+.container-btn3 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-btn3 input {
+    width: 80px;
+    height: 30px;
+}
+
+#btn-cambioFoto {
+    margin: 0 10px;
+}
+
+
+/*------------------FIN CONTENEDOR---------------------*/
+
+.container-btn-principales {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-btn-principales input {
+    width: 80px;
+    height: 30px;
+}

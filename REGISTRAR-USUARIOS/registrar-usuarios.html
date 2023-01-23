@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/validacion.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/estilos-btn.css">
+    <link rel="stylesheet" href="../css/estilos-btn.css">
+    <link rel="stylesheet" href="../css/pagina-principal.css" type="text/css">
+    <link rel="stylesheet" href="../css/index.css" type="text/css">
+    <title>Usuarios-admin</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <!--Logo-->
+
+        <div class="imageHeader">
+            <a href=""><img class="logoHeader" src="imgs/LOGO_1_PNG.png" /></a>
+        </div>
+
+        <!--Navegación-->
+
+        <nav>
+            <ul class="navContent">
+
+                <li> <a href="">Sobre nosotros</a> </li>
+                <li> <a href="">Servicios médicos</a> </li>
+                <li> <a href="">Hotel</a> </li>
+                <li> <a href="">Citas</a> </li>
+                <li> <a href="">Usuario</a> </li>
+
+            </ul>
+        </nav>
+
+    </header>
+    <section class="admin-usuarios">
+        <div class="nav-izquierdo">
+            <nav class="menuVertical">
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadorcli')" class="botonMenu">Cliente</button>
+                    <div id="miNavegadorcli" class="opcionesMenu">
+                        <a href="../Pagina_Inicial _Cliente.html">Perfil cliente</a>
+                        <a href="../Registrar-Mascota/registrarmascota.html">Registrar mascotas</a>
+                        <a href="../LISTAR-CITAS/listar-citas.html">Listar citar</a>
+                        <a href="../Proy-RegistroReservaciones/registro-citas-medicas.html">Reservar cita médica</a>
+                        <a href="../Listar-Reservaciones de Hotel/listar_reservacion_hotel.html">Lista habitación de hotel</a>
+                        <a href="../formulario_habitacion.html">Reservar habitaciones<br>de hotel</a>
+                        <a href="../Procesar_pagos/Procesar-Pagos.html">Hacer pagos</a>
+                        <a href="../LISTAR-TARJETAS/listar-tarjetas.html">Listar metodos de pagos</a>
+                        <a href="../CALIFICAR-MEDICO/calificar-medico.html">Calificación Veterinario</a>
+                    </div>
+                </div>
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadormed')" class="botonMenu">Médico</button>
+                    <div id="miNavegadormed" class="opcionesMenu">
+                        <a href="../CU-Visualizar-perfil-del-veterinario/Pagina-del-veterinario.html">Perfil médico</a>
+                        <a href="../Proy-RegistrarObservaciones/registrarObservaciones.html">Registrar observaciones médicas</a>
+                        <a href="../CU-Registrar-calificacion-mascota/registrar-calificacion-mascota.html">Registrar calificación de la mascota</a>
+                        <a href="../ejemplo ranking.html">Ranking estrellas mascotas</a>
+                    </div>
+                </div>
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadoradm')" class="botonMenu">Administrador</button>
+                    <div id="miNavegadoradm" class="opcionesMenu">
+                        <a href="">Perfil Administrador</a>
+                        <a href="../CU-Listar-usuarios/listar-usuarios.html">listar usuarios </a>
+                        <a href="../REGISTRAR-USUARIOS/registrar-usuarios.html" class="active">Registrar usuarios</a>
+                        <a href="../Proy-ListarMascotas/listar-mascotas.html">Listar mascotas</a>
+
+                    </div>
+                </div>
+                <div class="navegador">
+                    <button onclick="myFunction('miNavegadorsec')" class="botonMenu">Secretaria</button>
+                    <div id="miNavegadorsec" class="opcionesMenu">
+                        <a href="../Proy-RegistroReservaciones/principal-secretaria.html">Perfil Secretaria</a>
+                        <a href="../formulario_habitacion.html">Reservar habitaciones<br>
+          de hotel</a>
+                        <a href="../Proy-RegistroReservaciones/registro-citas-medicas.html">Citas médicas</a>
+                        <a href="../Procesar_pagos/Procesar-Pagos.html">Realizar pagos</a>
+                        <a href="../LISTAR-CITAS/listar-citas.html">Listar citas</a>
+                        <a href="../Proy-RegistroReservaciones/registro-citas-medicas.html">Listar reservaciones</a>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+        <div>
+            <section class="admin-usuarios">
+
+
+                <div class='menu-derecho'>
+                    <div id="lista">
+                        <h1 class="titulo">Registrar usuarios</h1>
+                    </div>
+                    <div>
+                        <form>
+                            <DIV class="azul">
+                                <div class="label-dropdown">
+                                    <label for="tipo-usuario">Tipo de usuario</label>
+                                    <select id="tipo-usuario">
+                                        <option value="">--Seleccione el tipo de usuario</option>
+                                        <option value="Veterinario">Veterinario</option>
+                                        <option value="Secretaria">Secretaria</option>
+                                    </select>
+                                </div>
+
+                                <div class="formulario">
+                                    <div class="label">
+                                        <label for="nombre">Nombre </label>
+                                        <input type="text" id="nombre">
+                                    </div>
+                                    <div class="label">
+                                        <label for="apellidos">Apellidos </label>
+                                        <input type="text" id="apellidos">
+                                    </div>
+                                </div>
+
+
+                                <div class="formulario">
+                                    <div class="label">
+                                        <label for="telefono">Teléfono</label>
+                                        <input type="number" min="0" id="telefono">
+                                    </div>
+                                    <div class="label">
+                                        <label for="cedula">Cédula</label>
+                                        <input type="number" min="0" id="cedula">
+                                    </div>
+                                </div>
+
+
+
+                                <div class="formulario">
+                                    <div class="label-3">
+                                        <label for="direccion">Direccion</label>
+                                        <input type="text" id="direccion">
+                                    </div>
+                                </div>
+
+                                <div class="formulario">
+                                    <div class="label-2">
+                                        <label for="nombre-usuario">Nombre de usuario</label>
+                                        <input type="text" id="nombre-usuario">
+                                    </div>
+                                    <div>
+                                        <h3 class="label-2">(emailaddress@email.com)</h3>
+                                    </div>
+                                </div>
+
+                                <div class="formulario">
+                                    <div class="label-2">
+                                        <label for="contrasena">Contraseña</label>
+                                        <input type="text" id="contrasena">
+                                    </div>
+                                </div>
+
+
+                                <div>
+                                    <h3 class="reglas-pw">La contraseña debe de incluir al menos una mayúscula, letras, números y un carácter especial</h3>
+                                </div>
+
+
+                                <div class="guardarborrar">
+                                    <button class="btn-logout" type="button" id="btn-guardar">Guardar</button>
+                                    <button class="btn-logout" type="" id="btn-guardar">Borrar</button>
+                                </div>
+                            </DIV>
+
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="fondo-foto">
+                    <img class="foto-cliente" src="imgs/user.png" alt="Fotografia del cliente">
+                </div>
+
+            </section>
+        </div>
+    </section>
+    <section id="stc-pie">
+
+        <div class="pie">
+            <div class="pie-imagen">
+                <img src="imgs/LOGO_1_PNG.png" alt="Logo">
+            </div>
+            <p>Clínica veterinaria Moka @2022</p>
+        </div>
+
+    </section>
+    <section id="stc-final">
+        <div>
+            <p>Diseñado por Innovatech</p>
+        </div>
+    </section>
+    <script src="js/administracion-usuarios.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        function myFunction(pIdCont) {
+            let tempContenido = document.getElementById(pIdCont);
+            if (tempContenido.className == "opcionesMenu") {
+                tempContenido.className = "opcionesMenu show";
+            } else {
+                tempContenido.className = "opcionesMenu";
+            }
+
+        }
+    </script>
+</body>
+
+</html>
